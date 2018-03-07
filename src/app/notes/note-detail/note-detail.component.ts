@@ -23,9 +23,9 @@ export class NoteDetailComponent {
       console.error('Note missing ID!');
     }
   }
-  addHeartToNote2(val: number) {
+  dislikethis(val: number) {
     if (this.note.id) {
-      this.noteService.updateNote(this.note.id, { hearts: val + -1 });
+      this.noteService.updateNote(this.note.id, { dislike: val + 1 });
     } else {
       console.error('Note missing ID!');
     }
