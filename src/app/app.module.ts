@@ -50,3 +50,11 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
   ],
 })
 export class AppModule { }
+var config = {
+  apiKey: "AIzaSyD90FS7MvHQbWcff4B3mjpJe_tlsR8Bdxk",
+  authDomain: "fs1prod-788e1.firebaseapp.com",
+  databaseURL: "https://fs1prod-788e1.firebaseio.com",
+  projectId: "fs1prod-788e1",
+  storageBucket: "fs1prod-788e1.appspot.com",
+  messagingSenderId: "371379689874"
+};
