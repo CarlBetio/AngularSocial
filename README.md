@@ -57,5 +57,5 @@ And finally `ng serve`
 
 ## Apps Using FireStarter in Production
 
-- [ArtiFilter](https://artifilter.com) - Neural Art Generator
+- [ArtiFilter](https://app.artifilter.com) - Neural Art Generator
 - [FlashLawyer](https://flashlawyer.com) - Legal Document Builder and Chatbot

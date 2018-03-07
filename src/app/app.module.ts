@@ -14,21 +14,24 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 
 // Feature Modules
-import { ItemModule } from './items/shared/item.module';
+// import { ItemModule } from './items/shared/item.module';
 import { UploadModule } from './uploads/shared/upload.module';
 import { UiModule } from './ui/shared/ui.module';
 import { NotesModule } from './notes/notes.module';
+import { ProductsModule } from './products/product.module';
 ///// End FireStarter
 
 import { environment } from '../environments/environment';
 
 import { AngularFireModule } from 'angularfire2';
-export const firebaseConfig = environment.firebaseConfig;
+export const firebase = environment.firebase;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -36,10 +39,11 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    ItemModule,
+   // ItemModule,
     UiModule,
     NotesModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    ProductsModule,
+    AngularFireModule.initializeApp(firebase),
   ],
   bootstrap: [
     AppComponent,
